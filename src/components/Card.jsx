@@ -32,7 +32,7 @@ const person = [
     name: "Sole Cata",
     age: 41,
     position: "FullStack Developer",
-    hobbies: "Viajar, fotografías, ver series",
+    hobbies: "Viajar, fotografías, series",
     linkdn: "",
     github: "",
     image: Sole,
@@ -86,10 +86,13 @@ const CardListItem = (props) => {
 
 const CardList = () => {
   return (
+    <div>
+      <h1 className="titulo">Grupo #17 React #22806</h1>
     <div className="container">
       {person.map((person) => {
         return <CardListItem person={person} key={person.id} />;
       })}
+    </div>
     </div>
   );
 };
